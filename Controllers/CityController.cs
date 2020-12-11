@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using WebAPI.Data.Repo;
+using WebAPI.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,40 +11,35 @@ namespace WebAPI.Controllers
   [ApiController]
   public class CityController : ControllerBase
   {
-    public CityController()
+    private readonly ICityRepository repo;
+    public CityController(ICityRepository repo)
     {
+      this.repo = repo;
 
     }
-    // GET: api/<CityController>
+
     [HttpGet]
-    public IEnumerable<string> Getstrings()
+    public async Task<IActionResult> GetCities()
     {
-      return new string[] { "Almaty", "Nursultan", "Uralsk", "Aqtobe", "Atyrau", "Aqtau" };
+      var cities = await repo.GetCitiesAsync();
+      return Ok(cities);
     }
 
-    // GET api/<CityController>/5
-    [HttpGet("{id}")]
-    public string Get(int id)
+    //Post api/city/post
+    [HttpPost("post")]
+    public async Task<IActionResult> AddCity(City city)
     {
-      return "value";
+      repo.AddCity(city);
+      await repo.SaveAsync();
+      return StatusCode(201);
     }
 
-    // POST api/<CityController>
-    [HttpPost]
-    public void Post([FromBody] string value)
+    [HttpDelete("delete/{id}")]
+    public async Task<IActionResult> DelteCity(int id)
     {
-    }
-
-    // PUT api/<CityController>/5
-    [HttpPut("{id}")]
-    public void Put(int id, [FromBody] string value)
-    {
-    }
-
-    // DELETE api/<CityController>/5
-    [HttpDelete("{id}")]
-    public void Delete(int id)
-    {
+      repo.DeleteCity(id);
+      await repo.SaveAsync();
+      return Ok(id);
     }
   }
 }
