@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
+using WebAPI.Interfaces;
 
 namespace WebAPI.Data.Repo
 {

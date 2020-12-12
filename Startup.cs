@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using WebAPI.Data;
 using WebAPI.Data.Repo;
+using WebAPI.Interfaces;
 
 namespace WebAPI
 {

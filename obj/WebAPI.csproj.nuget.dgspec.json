@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\5семестр\\Angular\\Project\\WebAPI\\WebAPI.csproj": {}
+    "K:\\5семестр\\Angular\\Project\\webapi\\WebAPI.csproj": {}
   },
   "projects": {
-    "K:\\5семестр\\Angular\\Project\\WebAPI\\WebAPI.csproj": {
+    "K:\\5семестр\\Angular\\Project\\webapi\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\5семестр\\Angular\\Project\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "K:\\5семестр\\Angular\\Project\\webapi\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "K:\\5семестр\\Angular\\Project\\WebAPI\\WebAPI.csproj",
+        "projectPath": "K:\\5семестр\\Angular\\Project\\webapi\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\Bibineyshn\\.nuget\\packages\\",
-        "outputPath": "K:\\5семестр\\Angular\\Project\\WebAPI\\obj\\",
+        "outputPath": "K:\\5семестр\\Angular\\Project\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

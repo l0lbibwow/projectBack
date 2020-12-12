@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hUJsKBx+ijr9tyBgsgKaGXK/Cc2LFFqrMAiJ9P+a3iKbwwK8Fp/lF/b07fArW7dzZguZkDmF/QEAGU6jxqGGDA==",
+  "dgSpecHash": "4AlsFdncuIkP5D/sbdiDbLaqOTzgOOg0+/mTXgDWsPNNF2t6FejO+tbPoM/6hpqb6lpVfVVP/tu/6deBp9OvQw==",
   "success": true,
-  "projectFilePath": "K:\\5семестр\\Angular\\Project\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "K:\\5семестр\\Angular\\Project\\webapi\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bibineyshn\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Bibineyshn\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
